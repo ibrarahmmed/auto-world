@@ -8,11 +8,22 @@ const Shop = () => {
     // data load in the shop
     const [products,setProducts]=useState([])
 
+    // cart use state
+    const [cart,setCart]=useState([])
+
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
+
+    const handleAddToCart=(product)=>{
+        console.log(product);
+
+        const newCart=[...cart,product];
+        setCart(newCart);
+
+    }
 
     return (
         <div className='shop-container'>
@@ -24,13 +35,15 @@ const Shop = () => {
 
                          key={product.id}
                          product={product}
+                         handleAddToCart={handleAddToCart}
                          
                          ></Product>)
                 }
                 
             </div>
             <div className="cart-container">
-                <h3>this is for cart</h3>
+                <h3>Order Summary</h3>
+                <p>Seclected Item:{cart.length}</p>
             </div>
         </div>
     );
