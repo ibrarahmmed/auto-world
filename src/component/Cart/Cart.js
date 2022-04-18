@@ -12,7 +12,7 @@ const Cart = (props) => {
 
     const handleOffer = () => {
         const randomNumber = Math.floor(Math.random() * cart.length);
-        const item = products[randomNumber];
+        const item = cart[randomNumber];
         setFreeProduct(item);
     }
 
