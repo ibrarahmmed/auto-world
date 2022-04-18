@@ -1,0 +1,31 @@
+.cart{
+    position: sticky;
+    top: 0px;
+    padding: 30px 20px;
+}
+.cart-item{
+   display: flex;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+.cart-img{
+    flex: 1;   
+}
+
+.cart .cart-item img{
+    width: 70%;
+   
+}
+
+.offer-btn{
+    font-family: 'Lato', sans-serif;
+    background-color: #FFE0B3;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.offer-btn:hover{
+    background-color: orange;
+}
