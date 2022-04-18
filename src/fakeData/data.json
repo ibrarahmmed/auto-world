@@ -49,8 +49,15 @@
     },
     {
       "id": "625d3187e6bbaea64eaa1b5a",
-      "picture": "https://demo1.leotheme.com/leo_rent_car_demo/en/home/4-16-the-adventure-begins-framed-poster.html#/19-dimension-40x60cm",
+      "picture": "https://3gz8cg829c.execute-api.us-west-2.amazonaws.com/prod/image-renderer/16x9/full/1015/center/80/483ca598-399b-44cd-bbce-28385f66d4ab-large16x9_audi_041816.jpg",
       "price": 2827,
-      "name": "Lamburgini EPIC"
-    }
+      "name": "Audi R8"
+    },
+
+    {
+        "id": "abc",
+        "picture": "https://economictimes.indiatimes.com/thumb/msid-79838229,width-1200,height-900,resizemode-4,imgsize-517740/all-new-audi-a4-will-be-launched-next-month-.jpg?from=mdr",
+        "price": 3827,
+        "name": "Audi a4"
+      }
   ]
