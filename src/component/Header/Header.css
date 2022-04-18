@@ -1,0 +1,14 @@
+.nav{
+    height: 80px;
+    background-color: #1C2B35;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+
+.nav h2{
+    margin: 0px;
+}
