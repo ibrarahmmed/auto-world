@@ -1,18 +1,24 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import './Cart.css'
 
 const Cart = (props) => {
-    const { cart,products } = props
-    const {freeProduct,setFreeProduct}=useState({})
+    const { cart, products,handleClearCart } = props
+   
+    const [freeProduct, setFreeProduct] = useState({});
     console.log(products)
 
 
 
-    const handleOffer=()=>{
-        const randomNumber=Math.floor(Math.random()*products.length);
-        const item=products[randomNumber];
+
+    const handleOffer = () => {
+        const randomNumber = Math.floor(Math.random() * cart.length);
+        const item = products[randomNumber];
         setFreeProduct(item);
     }
+
+   
+
+   
 
 
     return (
@@ -36,20 +42,31 @@ const Cart = (props) => {
                 ))
             }
 
-            
 
-            <button onClick={handleOffer} className='offer-btn'><p>Choose 1 For Me</p></button>
 
-            {Object.keys( freeProduct).length > 0 &&
-               ( <div  className="cart-item">
-                <div className='cart-img'>
-                    <img src={freeProduct.picture} alt="" />
+            <button onClick={handleOffer} className= 'offer-btn'><p>CHOOSE 1 FOR ME</p></button>
+
+
+            {Object.keys(freeProduct).length > 0 && (
+                <div className="cart-item">
+                    <div className='cart-img'>
+                        <img src={freeProduct.picture} alt="" />
+                    </div>
+                    <div>
+                        <p>{freeProduct.name}</p>
+                    </div>
                 </div>
-                <div>
-                    <p>{freeProduct.name}</p>
-                </div>
-            </div>
-               )}
+            )}
+
+            <button onClick={handleClearCart} className='delete-btn'><p>CHOOSE AGAIN </p></button>
+
+
+
+
+
+
+
+
 
         </div>
     );

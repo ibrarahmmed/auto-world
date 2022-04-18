@@ -24,8 +24,25 @@
     background-color: #FFE0B3;
     border: 1px solid gray;
     border-radius: 8px;
+    color: blue;
 }
 
 .offer-btn:hover{
     background-color: orange;
+    color: white;
 }
+
+.delete-btn{
+    font-family: 'Lato', sans-serif;
+    background-color: #FFE0B3;
+    border: 1px solid gray;
+    border-radius: 8px;
+    color: lightcoral;
+
+}
+
+.delete-btn:hover{
+    background-color: lightcoral;
+    color: black;
+}
+
